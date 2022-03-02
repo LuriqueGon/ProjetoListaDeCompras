@@ -121,7 +121,7 @@ th{
 
 @media (max-width : 600px){
     .ApagarTudo{
-        top: 8rem;
+        top: 1rem;
         bottom: auto;
         font-size: 1.2rem;
         vertical-align: middle;
@@ -135,8 +135,10 @@ th{
         background-color: #000;
     }
     .ValorTotal{       
-        right: 0;
-        left: 0rem;
+        right: 1rem;
+        left: auto;
+        bottom: auto;
+        top: 1rem;
         font-size: 1rem;
         width: 11rem;
         background-color: #000;
@@ -162,6 +164,10 @@ th{
     }
     th,td{
         border: 1px solid black;
-        
+        height: 3.2rem;
+        vertical-align: middle;
+    }
+    td.Icon{
+        flex-direction: column;
     }
 }
