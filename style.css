@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    resize: none;
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    font: normal normal 16px 'Nunito Sans', sans-serif ;
+}
+header{
+    width: 100%;    
+    padding: 1.4rem 0 2rem 0;
+    background-color: blueviolet;
+    color: white;
+    box-sizing: border-box;
+}
+header h1{    
+    text-align: center;
+    font-size: 3.4rem;
+}
+main{
+    padding: 2rem 5rem;
+    background-color: #fafbfc;
+}
+main h1{
+    font-size: 1.6rem;
+}
+.InputGroup{
+    width: 100%;
+    margin: 1rem auto;
+    border: 1px solid rgb(161, 161, 161);
+    padding: .8rem;
+    border-radius: 1rem;
+}
+.InputGroup .InputLine{
+    display: grid;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1rem 0 1rem;
+}
+.InputGroup .InputLine input{
+    padding: 0.8rem;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 0.25rem;
+}
+button{
+    margin: 1rem .8rem 0 .8rem;
+    font-size: 1.2rem;
+    background-color: blueviolet;
+    color: white;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .4rem;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(99, 30, 163);
+    
+}
+table{
+    width: 102%;
+    text-align: center;
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    padding:.2rem ;
+}
+table td.Icon{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+table td.Icon i{
+    cursor: pointer;
+    transition: all .3s;
+}
+table td.Icon i:nth-child(1):hover{
+    color: green;
+}
+table td.Icon i:nth-child(2):hover{
+    color: red;
+}
+th{
+    background-color: #ccc;
+}
+.ValorTotal{
+    font-size: 1.35rem;
+    font-weight: bold;
+    border: 1px solid rgba(85, 85, 85, 0.589);
+    width: 17rem;
+    text-align: center;
+    position: fixed;
+    bottom: 1rem;
+    right: 5rem;
+}
+.ValorTotal #Total{
+    font-weight: normal;
+}
+.ApagarTudo{
+    font-size: 1.35rem;
+    font-weight: bold;
+    border: 1px solid rgba(85, 85, 85, 0.589);
+    width: 17rem;
+    text-align: center;
+    position: fixed;
+    bottom: 1rem;
+    left: 5rem;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+.ApagarTudo:hover{
+    background-color: rgb(99, 30, 163);
+}

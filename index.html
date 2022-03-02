@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Compras (Nota Fiscal)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lista de Compras</h1>
+    </header>
+    <main>
+        <h1>Controle de Produtos</h1>
+        <p>Lista de produtos</p>
+        <div class="InputGroup">
+            <div class="InputLine">
+                <label for="ProdutoName">Produto </label>
+                <input type="text" id="ProdutoName" placeholder="Insira o nome do Produto">
+            </div>
+            <div class="InputLine">
+                <label for="ProdutoValor">Valor ( Unidade ) </label>
+                <input type="number" id="ProdutoValor" min="1" placeholder="Insira o valor do Produto">
+            </div>
+            <div class="InputLine">
+                <label for="ProdutoQuantidade">Quantidade </label>
+                <input type="number" id="ProdutoQuantidade" min="1" placeholder="Insira a quantidade do Produto">
+            </div>
+            <button class="btn BtnSalvar"onclick="produtos.Salvar()" id="btn1">Salvar</button>
+            <button class="btn BtnCancelar" onclick="produtos.Cancelar()">Cancelar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unidade</th>
+                    <th>Valor Todos</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="Tbody"></tbody>            
+        </table>
+        <div class="ValorTotal">
+            Valor Total : <span id="Total">R$ 0,00</span>
+        </div>
+        <div class="ApagarTudo" onclick="produtos.LimparTudo()">
+            Limpar Tabela
+        </div>
+        
+    </main>
+</body>
+</html>
