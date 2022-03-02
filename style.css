@@ -166,6 +166,7 @@ th{
         border: 1px solid black;
         height: 3.2rem;
         vertical-align: middle;
+        font-size: .9rem;
     }
     td.Icon{
         flex-direction: column;
