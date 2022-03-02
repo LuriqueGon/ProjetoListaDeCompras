@@ -118,3 +118,50 @@ th{
 .ApagarTudo:hover{
     background-color: rgb(99, 30, 163);
 }
+
+@media (max-width : 600px){
+    .ApagarTudo{
+        top: 8rem;
+        bottom: auto;
+        font-size: 1.2rem;
+        vertical-align: middle;
+        text-align: center;
+        width: 10rem;
+        border-radius: 1rem;
+        left: 1rem;
+        background-color: rgba(48, 45, 45, 0.651);
+    }
+    .ApagarTudo:hover{
+        background-color: #000;
+    }
+    .ValorTotal{       
+        right: 0;
+        left: 0rem;
+        font-size: 1rem;
+        width: 11rem;
+        background-color: #000;
+        color: white;
+        border: 2px solid rgb(235, 194, 194);
+    }
+    .ValorTotal #Total {
+        font-size: .8rem;
+    }
+    main{
+        padding: 2rem 1rem;
+        width: 90%;
+    }
+    main h1, main p{
+        text-align: center;
+    }
+    .btn-group{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    table{
+        width: 105%;
+    }
+    th,td{
+        border: 1px solid black;
+        
+    }
+}
